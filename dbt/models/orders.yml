@@ -444,6 +444,11 @@ models:
                 sql: ${amount}
                 filters:
                   - date_dim_param_test: "param is greater"
+              max_amount:
+                type: max
+                label: Max Amount
+                description: The maximum order amount
+                sql: ${amount}
         meta:
           dimension:
             type: number

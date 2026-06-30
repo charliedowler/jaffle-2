@@ -444,6 +444,13 @@ models:
                 sql: ${amount}
                 filters:
                   - date_dim_param_test: "param is greater"
+              total_revenue:
+                type: sum
+                label: Total Revenue
+                description: The total revenue generated from orders, calculated as the sum of the order amount/revenue column.
+                sql: ${amount}
+                format: usd
+                round: 2
         meta:
           dimension:
             type: number

@@ -325,6 +325,12 @@ models:
                     ELSE 'low'
                   END
             metrics:
+              total_revenue:
+                type: sum
+                label: Total Revenue
+                description: "The total revenue across all orders, calculated as the sum of the order amount."
+                format: usd
+                round: 2
               average_order_size:
                 type: average
                 format: usd

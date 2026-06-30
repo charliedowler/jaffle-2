@@ -1,0 +1,33 @@
+version: 2
+models:
+  - name: jaffle2_demo
+    config:
+      meta:
+        primary_key: id
+        group_label: jaffle-2
+        ai_hint:
+          - This model only exists in the jaffle-2 dbt source.
+          - If it appears as an explore, the multi-dbt-source manifest merge worked.
+    description: |
+      # Jaffle 2 demo
+
+      This model only exists in the jaffle-2 dbt source. If it shows up as an
+      explore in the Jaffle shop project, the multiple-dbt-sources manifest
+      merge worked.
+    columns:
+      - name: id
+        description: Row identifier
+        config:
+          meta:
+            dimension:
+              type: number
+            metrics:
+              row_count:
+                type: count
+                label: Row count
+      - name: source_name
+        description: Which dbt source this row came from
+        config:
+          meta:
+            dimension:
+              type: string

@@ -351,6 +351,12 @@ models:
                 description: The average value of an order
                 format: usd
                 round: 2
+              min_order_value:
+                type: min
+                label: Minimum Order Value
+                description: The minimum value of an order
+                format: usd
+                round: 2
               average_order_amount:
                 type: average
                 format: usd

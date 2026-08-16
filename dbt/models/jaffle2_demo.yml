@@ -20,8 +20,7 @@ models:
         config:
           meta:
             dimension:
-              type: number
-              bogus_unknown_property: true
+              type: not_a_real_type
             metrics:
               row_count:
                 type: count

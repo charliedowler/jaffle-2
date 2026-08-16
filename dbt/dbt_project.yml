@@ -1,4 +1,4 @@
-name: jaffle_shop
+name: jaffle_shop_two
 version: '0.1'
 profile: jaffle_shop
 config-version: 2
@@ -18,7 +18,7 @@ clean-targets:
   - dbt_modules
   - logs
 models:
-  jaffle_shop:
+  jaffle_shop_two:
     materialized: table
     staging:
       materialized: view

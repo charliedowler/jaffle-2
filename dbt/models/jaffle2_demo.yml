@@ -21,6 +21,7 @@ models:
           meta:
             dimension:
               type: number
+              bogus_unknown_property: true
             metrics:
               row_count:
                 type: count

@@ -20,7 +20,7 @@ models:
         config:
           meta:
             dimension:
-              type: not_a_real_type
+              type: number
             metrics:
               row_count:
                 type: count
